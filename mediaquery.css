@@ -67,8 +67,11 @@
 }
 
 .image-text{
-    top: 28%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%, -50%);
     text-align: start;
+    padding-left: 20px;
     }
     
 .image-text h6{
@@ -76,7 +79,7 @@
   }
  
 .image-text h5{
-  font-size: 40px;
+  font-size: 30px;
   }
 
 .image-text span{
@@ -104,6 +107,7 @@
 .explore button{
   font-size: 14px;
   padding: 10px;
+  margin-left: 0;
 }
 
 .main-rating-container{

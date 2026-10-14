@@ -125,12 +125,14 @@ nav a:active{
 
 .main-homepage-image-container{
    width: 100%;
+   position: relative;
 }
 
 /* main page */
 .home-page-image{
    width: 100%;
    height: 550px;
+   
 }
 
 .home-page-image img{

@@ -28,7 +28,6 @@ section{
 
 .right-login-container{
     width: 30%;
-    height: 100hv;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -37,7 +36,6 @@ section{
 
 .login-container{
     width: 70%;
-    height: 100vh;
     background-color: #fff;
 }
 .logo{

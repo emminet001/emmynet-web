@@ -1,0 +1,75 @@
+@media (min-width:759px) and (max-width:1200px){
+    .left-login-container{
+        width: 40%;
+    }
+    .right-login-container{
+        width: 60%;
+        background-color: #001A3D;
+    }
+    .login-container{
+        background-color: #001A3D;
+    }
+    
+}
+
+@media (min-width:500px) and (max-width:758px){
+    .left-login-container{
+        width: 30%;
+         background-color: #001A3D;
+    }
+    .right-login-container{
+        width: 70%;
+        background-color: #001A3D;
+    }
+    .login-container{
+        background-color: #001A3D;
+    }
+    .login-heading h2{
+        color: #f7f4f4;
+    }
+    .login{
+        background-color: #f7f4f4;
+    }
+}
+
+@media screen and (max-width:499px){
+    .left-login-container{
+        display: none;
+    }
+    .right-side-container{
+        display: none;
+    }
+    .central-reset-container{
+        width: 100%;
+        background-color: #001A3D;
+    }
+    .reset-container{
+        background-color: #001A3D;
+    }
+    .reset-heading h2{
+        color: #f7f4f4;
+    }
+    .reset{
+        background-color: #f7f4f4;
+    }
+    .footer-container{
+        margin-top: 0;
+        
+    }
+    .reset-field{
+        height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .footer-image{ 
+        width: 100%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        overflow: hidden;
+    }
+    .footer-paragraph{
+        color: #fff;
+        padding: 20px;
+    }
+
+}

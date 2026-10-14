@@ -28,7 +28,6 @@ section{
 
 .central-reset-container{
     width: 30%;
-    height: 100hv;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -37,7 +36,6 @@ section{
 
 .reset-container{
     width: 80%;
-    height: 100vh;
     background-color: #fff;
 }
 .logo{
