@@ -37,15 +37,17 @@ body{
 }
 
 /* navigation bar container */
- nav{
-   display: flex;
+nav {
    width: 100%;
    height: 80px;
-   background-color: #001A3D;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
    align-items: center;
-   padding: 0 20px;
-   margin: 0;
- }
+   padding: 0 px;
+   background-color: #001A3D;
+    }
+ 
  .logo{
    width: 200px;
    height: 100%;
@@ -69,20 +71,30 @@ body{
    color: #ffa500;
 }
 
+ .menu-btn {
+      display: none;           
+      font-size: 26px;
+      background: none;
+      border: 0;
+      cursor: pointer;
+      padding: 6px 10px;
+    }
+
  /* navigation links container */
-.link-container{
-   width: 100%;
+.nav-bar{
+   /* width: 100%; */
    height: 100%;
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: flex-end;
+   gap: 40px;
+   padding-right: 20px;
 }
 
  /* navigation links styling */
-nav a{
+.nav-bar a{
    height: 100%;
-   padding: 0 20px;
    display: flex;
    align-items: center;
    text-decoration: none;
@@ -93,34 +105,23 @@ nav a{
 nav a:hover{
    text-decoration: 2px underline #a7761c;
    transition: 0.75s ease-in-out;
-   border-radius: 12px;
+   border-radius: 8px;
 }
 nav a:active{
    text-decoration: 2px underline #a7761c;
 }
 
-.login{
+.nav-bar .login{
    height: 60%;
-  background-color: #ffa500;
-   border-radius: 12px;
+   background-color: #ffa500;
+   border-radius: 8px;
+   padding: 0 10px;
 }
 .login:hover{
    text-decoration: none;
    background-color: #a7761c;
 }
 
-.explore{
-    display: none;
-}
-.open-sidebar-icon, .close-sidebar-icon{
-   font-size: 20px;
-   display: none;
-   color: #FFFF;
-}
-
-#sidebar-active{
-   display: none;
-}
 
 .main-homepage-image-container{
    width: 100%;
@@ -177,7 +178,7 @@ nav a:active{
    display: none;
 }
 
-#get-started button{
+.get-started button{
    font-family: 'Roboto', sans-serif;
    font-size: 18px;
    color: #ffffff;
@@ -185,17 +186,17 @@ nav a:active{
    background-color: #ffa500;
    border: none;
    border-radius: 10px;
-    margin-bottom: 44px;
-    margin-right: 10px;
+   margin-bottom: 44px;
+   margin-right: 10px;
 }
 
-#get-started button:hover{
+.get-started button:hover{
    background-color: #a7761c;
    transition: 0.78s ease-out;
    cursor: pointer;
 }
 
-#explore button{
+.explore button{
    font-family: 'Roboto', sans-serif;
    font-size: 18px;
    color: #ffffff;
@@ -206,7 +207,7 @@ nav a:active{
    margin-left: 10px;
 }
 
-#explore button:hover{
+.explore button:hover{
    background-color: #0d569e;
    transition: 0.78s ease-out;
    cursor: pointer;
@@ -391,7 +392,6 @@ nav a:active{
    justify-content: center;
    align-items: center;
    margin-top: 30px;
-   /* margin-bottom: 15px; */
 }
 
 /*why-us-card container */
@@ -443,8 +443,15 @@ nav a:active{
    width: 70%;
 }
 /* the four inner cards container*/
-.top-side{
+.right-side-inner-container{
    width: 100%;
+   height: 220px;
+   display: flex;
+   margin: 2px; 
+}
+.right-side-inner-container-down{
+   width: 100%;
+   height: 220px;
    display: flex;
    margin: 2px; 
 }
@@ -516,12 +523,12 @@ nav a:active{
    height: inherit;
    display: flex;
    justify-content: center;
-   align-items: flex-start;
 }
 /* the left side image container */
 .left-top-img{
    width: 80%;
-   height: 200px;
+   display: flex ;
+   align-self: flex-start;
 }
 
 .left-top-img img{
@@ -721,6 +728,7 @@ nav a:active{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   background-color: #0d569e;
 }
 
 .start-project-button{
@@ -863,7 +871,7 @@ nav a:active{
 
 .policy-container{
    width: 100%;
-   height: 40px;
+   height: 80px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -871,7 +879,7 @@ nav a:active{
 }
 .policy{
    width: 90%;
-   height: 40px;
+   height: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -880,13 +888,13 @@ nav a:active{
 }
 .policy p{
    font-family: 'Roboto', sans-serif;
-   font-size: 14px;
+   font-size: 16px;
    color: rgb(247, 244, 244, 0.4);
 }
 
 .terms a{
    font-family: 'Roboto', sans-serif;
-   font-size: 14px;
+   font-size: 16px;
    text-decoration: none;
    color: rgb(247, 244, 244, 0.4);
 }

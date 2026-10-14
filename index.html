@@ -22,27 +22,17 @@
             <img src="./images/logo.png" alt="logo">
             <h4>Emmynet <span><br>ICT Hub</span></h4>
         </div>
-      <input type="checkbox" id="sidebar-active">
-        <label for="sidebar-active" class="open-sidebar">
-             <span class="open-sidebar-icon">&#9776</span>
-        </label>
 
-        <label for="sidebar-active" id="overlay"></label>
-
-        <div class="link-container">
-           <label for="sidebar-active" class="close-sidebar">
-             <span class="close-sidebar-icon">&#10005</span>
-           </label>
+        <button class="menu-btn">&#9776;</button>
 
     <!--navigation -->
-        
+        <div id="navBar" class="nav-bar">
             <a href="www.google.com">HOME</a>
             <a href="#">ABOUT</a>
             <a href="#">CONTENT</a>
             <a href="#">CONTACT</a>
             <a href="#">FAQs</a>
-            <a href="login.html" class="login">Get started</a>
-            <a href="login.html" class="explore">Explore Training Programs</a>
+            <a href="#" class="login">Get started</a>
         </div>
   </nav>
 
@@ -56,17 +46,17 @@
             <h6>WELCOME TO EMMYNET ICT HUB</h6>
             <H5>Learn. Create. <br> Connect. <span>Grow.</span></H5>
             <p>We provide digital skills training, technology <br> solution and professional services that help <br> you achieve more.</p>
-            <a id="get-started" href="#"><button type="button">Start Your Project</button></a>
-            <a id="explore" href="#"><button type="button">Explore Training Programs</button></a>
+            <a id="getStarted" class="get-started" href="#"><button type="button">Start Your Project</button></a>
+            <a id="explore" class="explore" href="#"><button type="button">Explore Training Programs</button></a>
         </div>
     </div>
-     <div class="home-text">
+     <!-- <div class="home-text">
             <h6>WELCOME TO Emmynet ICT Hub</h6>
             <H5>Learn. Create. <br> Connect. <span>Grow.</span></H5>
             <p>We provide digital skills training, technology <br> solution and professional services that help <br> you achieve more.</p>
             <button id="getStarted" type="button">Start Your Project</button>
             <button id="explore" type="button">Explore Training Programs</button>
-        </div>
+        </div> -->
 
     <div class="main-rating-container">
         <div class="rating-container">
@@ -167,7 +157,7 @@
         <div class="why-us-right-side">
 
             <!-- the container that holds the two cards that are on top -->
-            <div class="top-side">
+            <div class="right-side-inner-container">
                 <!-- the cards(this card is copy in to four places with the same code) -->
                 <div class="top-cards">
 
@@ -198,7 +188,7 @@
                 </div>     
             </div>
             <!-- top cards, the top cards are in to two: left and right -->
-            <div class="top-side">
+            <div class="right-side-inner-container-down">
                 <div class="top-cards">
 
                     <!-- left side that holds an image -->
@@ -229,7 +219,7 @@
             </div>
         </div>
     </div>
- </div>
+</div>
 
 <div class="our-service">
     <h1>OUR SERVICES / PROGRAMS</h1>
@@ -350,10 +340,11 @@
             <div class="terms">
                 <a href="#">Privacy Policy</a>
                 <a href="#">| Terms & conditions</a>
-
             </div>
 
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
