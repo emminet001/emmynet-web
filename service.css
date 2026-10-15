@@ -37,15 +37,17 @@ body{
 }
 
 /* navigation bar container */
- nav{
-   display: flex;
+nav {
    width: 100%;
    height: 80px;
-   background-color: #001A3D;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
    align-items: center;
-   padding: 0 20px;
-   margin: 0;
- }
+   padding: 0 px;
+   background-color: #001A3D;
+    }
+ 
  .logo{
    width: 200px;
    height: 100%;
@@ -69,20 +71,30 @@ body{
    color: #ffa500;
 }
 
+ .menu-btn {
+      display: none;           
+      font-size: 26px;
+      background: none;
+      border: 0;
+      cursor: pointer;
+      padding: 6px 10px;
+    }
+
  /* navigation links container */
-.link-container{
-   width: 100%;
+.nav-bar{
+   /* width: 100%; */
    height: 100%;
    display: flex;
    flex-direction: row;
-   justify-content: flex-end;
    align-items: center;
+   justify-content: flex-end;
+   gap: 40px;
+   padding-right: 20px;
 }
 
  /* navigation links styling */
-nav a{
+.nav-bar a{
    height: 100%;
-   padding: 0 20px;
    display: flex;
    align-items: center;
    text-decoration: none;
@@ -93,44 +105,43 @@ nav a{
 nav a:hover{
    text-decoration: 2px underline #a7761c;
    transition: 0.75s ease-in-out;
-   border-radius: 12px;
-}
-
-.login{
-   height: 50%;
-   background-color: #ffa500;
    border-radius: 8px;
 }
+nav a:active{
+   text-decoration: 2px underline #a7761c;
+}
 
+.nav-bar .login{
+   height: 60%;
+   background-color: #ffa500;
+   border-radius: 8px;
+   padding: 0 10px;
+}
 .login:hover{
-    text-decoration: none;
-    background-color: #a7761c;
+   text-decoration: none;
+   background-color: #a7761c;
 }
-
-.explore{
-    display: none;
-}
-.open-sidebar-icon, .close-sidebar-icon{
-   font-size: 20px;
-   display: none;
-   color: #FFFF;
-}
-
-#sidebar-active{
-   display: none;
-}
-
 .service-image-container{
     width: 100%;
-    height: 430px;
-    display: flex;
+    height: 500px;
+    background-color: #ffa500;
+    position: relative; 
+}
+
+.service-img img{
+    width: 100%; 
+    height: 100%;    
+}
+.content-image{
+    display: none;
 }
 
 .service-image-text{
-    width: 50%;
-    background-color: #001A3D;
-    padding: 40px 60px;
-}
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+} 
 
 .service-image-text h1{
     font-family: 'Roboto', sans-serif;

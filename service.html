@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service page</title>
+    <title>Emmynet ICT Hub</title>
 <link rel="icon" href="./images/logo.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,45 +22,35 @@
             <img src="./images/logo.png" alt="logo">
             <h4>Emmynet <span><br>ICT Hub</span></h4>
         </div>
-        
-      <input type="checkbox" id="sidebar-active">
-        <label for="sidebar-active" class="open-sidebar">
-             <span class="open-sidebar-icon">&#9776</span>
-        </label>
 
-        <label for="sidebar-active" id="overlay"></label>
-   
-        <div class="link-container">
-            
-           <label for="sidebar-active" class="close-sidebar">
-             <span class="close-sidebar-icon">&#10005</span>
-           </label>
+        <button class="menu-btn">&#9776;</button>
 
     <!--navigation -->
-        
-            <a href="www.google.com">HOME</a>
+        <div id="navBar" class="nav-bar">
+            <a href="index.html">HOME</a>
             <a href="#">ABOUT</a>
             <a href="#">CONTENT</a>
             <a href="#">CONTACT</a>
             <a href="#">FAQs</a>
-            <a href="Login.html" class="login">Get started</a>
-            <a href="Login.html" class="explore">Explore Training Programs</a>
+            <a href="login.html" class="login">Get started</a>
         </div>
-        
   </nav>
-  <section class="service-image-container">
-    <div class="service-image-text">
-        <h1>Technology Service<br> <h2>Build Around</h2><br> <span>Your Goals</span></h1>
-        <p>From your first website to your full digital infrastruture,<br> Emmynet ICT Hub deliver development, support<br> and strategy-All under one roof.</p>
-        <button type="button" class="consultation-button" id="consultationButton">
-            Get Free Consultation
-        </button>
-    </div>
-    <div class="service-image">
+
+    <div class="service-image-container">
         <div class="service-img">
-            <img src="./images/content 4.png" alt="">
+            <img class="content-image" src="./images/content 4.png" alt="">
+            <img class="home-page-image" src="./images/home page.png" alt="">
+        </div>
+    
+    
+        <div class="service-image-text">
+            <h1>Technology Service<br> <h2>Build Around</h2><br> <span>Your Goals</span></h1>
+            <p>From your first website to your full digital infrastruture,<br> Emmynet ICT Hub deliver development, support<br> and strategy-All under one roof.</p>
+           <button type="button" class="consultation-button"   id="consultationButton">
+              Get Free Consultation
+            </button>
         </div>
     </div>
-  </section>
+    <script src="service.js"></script>
 </body>
 </html>
