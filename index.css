@@ -327,7 +327,28 @@ nav a:active{
    padding: 10px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+ .card:hover {
+    background-color: rgb(233, 229, 229);
+    cursor: pointer;
+  }
 
+/* the dark layer, invisible at first */
+.card::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* keep the text and buttons above the dark layer */
+.card > * {
+  position: relative;
+}
 .left-side{
    width: 22%;  
    display: flex;             
@@ -373,18 +394,33 @@ nav a:active{
    margin-bottom: 10px;
    color: #442929;
 }
-
 .right-side a{
    font-family: sans-serif;
    font-size: 16px;
    text-decoration: none;
    color: #f00
 }
-
-.right-side a:hover{
-   cursor: pointer;
+ .right-side:hover {
+    background-color: rgb(233, 229, 229);
+    cursor: pointer;
+  }
+  
+/* the dark layer, invisible at first */
+.right-side::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
-
+.right-side:hover::before {
+  opacity: 1;
+}
+/* keep the text and buttons above the dark layer */
+.right-side
+ > * {
+  position: relative;
+}
 /* Here is the container that holds WHY CHOOOSE USE section  */
 .why-us-container{
    width: 100%;
