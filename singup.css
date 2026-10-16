@@ -21,7 +21,7 @@ section{
     width:100%;
     display: flex;
 }
-.left-login-container{
+.left-signup-container{
     width: 35%;
     background-color: rgb(36, 146, 67);
 }
