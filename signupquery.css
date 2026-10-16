@@ -10,7 +10,29 @@
     }
     .center-signup-container{
         width: 100%;
-        height: 920px;
+        height: 924px;
+        background-color: #001A3D
+    }
+    .signup-container{
+        background-color: #001A3D
+    }
+    .signup-heading h2{
+        color: #f7f4f4;
+    }
+    .signup-condition p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #fff;
+    }
+    .signup-condition a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #ff0000;
+        line-height: 24px;
+        font-weight: 300;
+    }
+    .signup-condition span{
+        color: #fff;
     }
     .right-signup-container{
         display: none;
