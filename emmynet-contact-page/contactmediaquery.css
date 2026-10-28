@@ -1,0 +1,275 @@
+  /* ===============================================
+       RESPONSIVE BREAKPOINTS
+       Mobile: up to 499px
+       Tablet: 500px–758px (using 500px instead of 00px)
+       Medium screens: 759px–1200px
+       Desktop: default styles above 1200px
+       =============================================== */
+
+    /* Mobile phones */
+    @media screen and (max-width: 499px) {
+      /* Hamburger lines */
+
+      .navbar { 
+        flex-wrap: wrap; 
+        padding: 10px 4%; 
+        gap: 10px; 
+    }
+      .brand { 
+        min-width: auto;
+    }
+      .brand-mark { 
+        width: 35px; 
+        height: 35px; 
+        font-size: 21px; 
+    }
+      .brand-name { 
+        font-size: 17px; 
+    }
+      .brand-name span { 
+        font-size: 15px; 
+    }
+      .nav-actions { 
+        margin-left: auto; 
+        gap: 6px; 
+    }
+      .nav-actions .btn { 
+        padding: 8px 10px; 
+        font-size: 11px; 
+    }
+      .login-btn { 
+        display: none; 
+    }
+      .nav-links { 
+        order: 3; 
+        width: 100%; 
+        overflow-x: auto; 
+        gap: 19px; 
+    }
+      .nav-links a { 
+        font-size: 11px; 
+    }
+      .image { 
+        min-height: 300px; 
+    }
+      .hero-image { 
+        width: 100%; 
+        opacity: .23; 
+    }
+      .image-container::before { 
+        background: linear-gradient(90deg, rgba(247,248,251,.98), rgba(247,248,251,.78)); 
+    }
+      .image-content { 
+        padding: 35px 6%; 
+        max-width: 100%; 
+    }
+      .image h1 { 
+        font-size: 47px; 
+    }
+      .image p { 
+        font-size: 15px; 
+        max-width: 310px; 
+    }
+      .contact-cards { 
+        margin: 14px auto 0; 
+        padding: 0 4%; 
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+    }
+      .contact-card { 
+        min-height: auto; 
+        padding: 15px; 
+    }
+      .contact-card p { 
+        margin-bottom: 10px; 
+    }
+      .map-preview { 
+        height: 145px; 
+    }
+      .main-contact { 
+        margin-top: 14px; 
+        padding: 0 4%; 
+        grid-template-columns: 1fr; 
+        gap: 12px; 
+    }
+      .form-panel { 
+        padding: 16px; 
+    }
+      .form-panel h2 { 
+        font-size: 23px; 
+    }
+      .office-panel, .office-panel > img { 
+        min-height: 440px; 
+    }
+      .office-message { 
+        top: 10%; 
+        left: 5%; 
+        width: 78%; 
+        padding: 22px; 
+    }
+      .bottom-strip { 
+        margin: 14px 4%; 
+        grid-template-columns: 1fr; 
+        gap: 20px; padding: 17px; 
+    }
+      .social-side { 
+        border-right: 0; 
+        border-bottom: 1px solid #cbd8ed; padding-bottom: 17px; 
+    }
+      .faq-side img { 
+        width: 80px; 
+    }
+      footer { 
+        padding: 22px 5% 12px; 
+    }
+      .footer-grid { 
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px 14px; 
+    }
+      .footer-column { 
+        border-right: 0; 
+        padding-right: 0; 
+    }
+      .footer-brand { 
+        grid-column: 1 / -1; 
+    }
+      .legal { 
+        flex-direction: column; 
+    }
+    }
+
+    /* Tablets and smaller portrait screens */
+    @media screen and (min-width: 500px) and (max-width: 758px) {
+      .navbar { 
+        flex-wrap: wrap; 
+        padding: 10px 3%; 
+        gap: 12px; 
+    }
+      .brand { 
+        min-width: auto; 
+    }
+      .nav-actions { 
+        margin-left: auto; 
+    }
+      .nav-links { 
+        order: 3; 
+        width: 100%; 
+        justify-content: space-between; 
+        gap: 12px; 
+    }
+      .nav-links a { 
+        font-size: 11px; 
+    }
+      .hero { 
+        min-height: 290px; 
+    }
+      .image-image { 
+        width: 72%; 
+        opacity: .75; 
+    }
+      .image-content { 
+        padding: 30px 4%; 
+        max-width: 390px; 
+    }
+      .image h1 { 
+        font-size: 48px; 
+    }
+      .image p { 
+        font-size: 15px; 
+    }
+      .contact-cards { 
+        margin: 16px auto 0; 
+        padding: 0 3%; 
+        
+        grid-template-columns: repeat(2, 1fr); 
+    }
+      .contact-card { 
+        min-height: 220px; 
+        padding: 14px; 
+    }
+      .main-contact { 
+        padding: 0 3%; 
+        grid-template-columns: 1fr; 
+    }
+      .office-panel, .office-panel > img { 
+        min-height: 430px; 
+    }
+      .office-message { 
+        width: 45%; 
+    }
+      .bottom-strip { 
+        margin-left: 3%; 
+        margin-right: 3%; 
+    }
+      .faq-side img { 
+        width: 75px; 
+    }
+      .footer-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+      .footer-column { 
+        border-right: 0; 
+    }
+      .footer-brand { 
+        grid-column: 1 / -1; 
+    }
+    }
+
+    /* Larger tablets, small laptops, and medium desktop screens */
+    @media (min-width: 759px) and (max-width: 1200px) {
+      .navbar { 
+        padding-left: 2%; 
+        padding-right: 2%; 
+        gap: 10px; 
+    }
+      .brand { 
+        min-width: 160px; 
+    }
+      .brand-name { 
+        font-size: 18px; 
+    }
+      .nav-links { 
+        gap: 14px; 
+    }
+      .nav-links a { 
+        font-size: 11px; 
+    }
+      .nav-actions { 
+        gap: 7px; 
+    }
+      .nav-actions .btn { 
+        padding: 9px 12px; 
+    }
+      .hero-content { 
+        padding-left: 5%; 
+    }
+      .contact-cards, .main-contact { 
+        padding-left: 3%; 
+        padding-right: 3%; 
+    }
+      .contact-card { 
+        padding: 12px; 
+    }
+      .card-title { 
+        gap: 8px; 
+    }
+      .contact-card h2 { 
+        font-size: 16px; 
+    }
+      .contact-card p { 
+        font-size: 12px; 
+    }
+      .main-contact { 
+        grid-template-columns: 1fr 1fr; 
+    }
+      .form-panel { 
+        padding: 14px; 
+    }
+      .office-message { 
+        width: 54%; 
+        padding: 20px; 
+    }
+      .footer-grid { 
+        gap: 15px; 
+    }
+    }

@@ -1,0 +1,312 @@
+
+    /* =========================================================
+       RESPONSIVE VIEWPORTS
+       Mobile: up to 499px
+       Tablet: 500px to 758px (the requested 00px start is 500px)
+       Small laptop/tablet landscape: 759px to 1200px
+       Desktop: above 1200px uses the main styles above
+       ========================================================= */
+
+    /* Mobile phones */
+    @media screen and (max-width: 499px) {
+      body { 
+        font-size: 12px; 
+    }
+      .navbar { 
+        padding: 10px 4%; 
+        flex-wrap: wrap; 
+        gap: 10px; 
+    }
+      .brand { 
+        min-width: auto; 
+    }
+      .brand-mark { 
+        width: 34px; 
+        height: 34px; 
+    }
+      .brand-name { 
+        font-size: 17px; 
+    }
+      .brand-name span { 
+        font-size: 15px; 
+    }
+      .nav-cta { 
+        min-width: auto; 
+        padding: 8px 11px; 
+    }
+      .nav-links { 
+        order: 3; 
+        width: 100%; 
+        overflow-x: auto; 
+        gap: 18px; }
+      .nav-links a { 
+        font-size: 11px; 
+    }
+      .hero { 
+        min-height: auto; 
+        align-items: flex-start; 
+    }
+      .hero-image { 
+        width: 100%; 
+        opacity: .3; 
+        object-position: center; 
+    }
+      .hero::before { 
+        background: linear-gradient(90deg, rgba(3,21,53,.98), rgba(3,21,53,.78)); 
+    }
+      .hero-content { 
+        padding: 30px 5%; 
+        max-width: 100%; 
+    }
+      .hero h1 { 
+        font-size: 35px; 
+    }
+      .hero p { 
+        max-width: 100%; 
+    }
+      .hero-buttons { 
+        gap: 8px; 
+    }
+      .hero-buttons .btn { 
+        flex: 1 1 45%; 
+        padding: 8px; 
+        gap: 7px; 
+    }
+      .hero-stats { 
+        gap: 9px; 
+        flex-wrap: wrap; 
+        margin-top: 20px; 
+    }
+      .mini-stat { 
+        padding-right: 8px; 
+        gap: 5px; 
+    }
+      .mini-stat .symbol { 
+        font-size: 18px; 
+    }
+      .mini-stat strong { 
+        font-size: 12px; 
+    }
+      .mini-stat small { 
+        font-size: 8px; 
+    }
+      .section { 
+        padding: 17px 4%; 
+    }
+      .section-heading h2 { 
+        font-size: 20px; 
+    }
+      .benefits, .program-grid { grid-template-columns: 1fr; 
+    }
+      .benefit-card { 
+        min-height: auto; 
+    }
+      .program-photo { 
+        height: 145px; 
+    }
+      .program-body p { 
+        min-height: 0; 
+    }
+      .program-footnote { 
+        justify-content: flex-start; 
+    }
+      .journey { 
+        padding: 12px; 
+    }
+      .journey-grid { 
+        grid-template-columns: 1fr; 
+        gap: 17px; 
+    }
+      .step { 
+        min-height: 75px; 
+    }
+      .step-arrow { 
+        display: none; 
+    }
+      .step p { 
+        font-size: 10px; 
+    }
+      .testimonial-grid { 
+        grid-template-columns: 1fr; 
+    }
+      .testimonial { 
+        padding: 12px; 
+    }
+      .apply-cta { 
+        margin: 0; 
+        border-radius: 0; 
+        padding: 22px 5%; 
+        align-items: flex-start; 
+        flex-direction: column; 
+    }
+      .apply-left { 
+        gap: 12px; 
+    }
+      .cap-icon { 
+        font-size: 38px; 
+    }
+      .apply-cta h2 { 
+        font-size: 19px; 
+    }
+      .apply-cta p { 
+        font-size: 12px; 
+    }
+      .apply-buttons { 
+        width: 100%; 
+    }
+      .apply-buttons .btn { 
+        flex: 1 1 100%; 
+    }
+      footer { 
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px 15px; padding: 20px 5%; 
+    }
+      .footer-brand, .footer-links { 
+        border-right: 0; padding-right: 0; 
+    }
+      .legal { 
+        flex-direction: column; 
+        gap: 4px; 
+    }
+    }
+
+    /* Tablets and narrow screens */
+    @media screen and (min-width: 500px) and (max-width: 758px) {
+      .navbar { 
+        flex-wrap: wrap; 
+        padding: 10px 3%; 
+    }
+      .brand { 
+        min-width: auto; 
+    }
+      .nav-links { 
+        order: 3; 
+        width: 100%; 
+        justify-content: space-between; 
+        gap: 12px; 
+    }
+      .nav-links a { 
+        font-size: 12px; 
+    }
+      .hero { 
+        min-height: 300px; 
+    }
+      .hero-image { 
+        width: 70%; 
+    }
+      .hero-content { 
+        padding: 25px 4%; 
+        max-width: 390px; 
+    }
+      .hero h1 { 
+        font-size: 34px; 
+    }
+      .hero-stats { 
+        flex-wrap: wrap; 
+        gap: 8px; 
+    }
+      .mini-stat { 
+        padding-right: 7px; 
+    }
+      .section { 
+        padding-left: 3%; 
+        padding-right: 3%; 
+    }
+      .benefits { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+      .program-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+      .program-photo { 
+        height: 120px; 
+    }
+      .journey-grid { 
+        grid-template-columns: repeat(2, 1fr); row-gap: 20px; 
+    }
+      .step-arrow { 
+        display: none; 
+    }
+      .testimonial-grid { 
+        grid-template-columns: 1fr; 
+    }
+      .apply-cta { 
+        flex-wrap: wrap; 
+    }
+      footer { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+      .footer-brand, .footer-links { 
+        border-right: 0; 
+    }
+    }
+
+    /* Larger tablets, small laptops and medium desktop screens */
+    @media (min-width: 759px) and (max-width: 1200px) {
+      .navbar { 
+        padding-left: 2%; 
+        padding-right: 2%; 
+        gap: 12px; 
+    }
+      .brand { 
+        min-width: 165px; 
+    }
+      .nav-links { 
+        gap: 17px; 
+    }
+      .hero-content { 
+        padding-left: 4%; 
+        max-width: 430px; 
+    }
+      .hero h1 { 
+        font-size: 38px; 
+    }
+      .section { 
+        padding-left: 3%; 
+        padding-right: 3%; 
+    }
+      .benefits { 
+        gap: 8px; 
+    }
+      .benefit-card { 
+        padding: 12px 9px; 
+        gap: 8px; 
+    }
+      .round-icon { 
+        flex-basis: 45px; 
+        width: 45px; 
+        height: 45px; 
+        font-size: 20px; 
+    }
+      .benefit-card p { 
+        font-size: 10px; 
+    }
+      .program-grid { 
+        gap: 10px; 
+    }
+      .program-body { 
+        padding-left: 12px;
+        padding-right: 12px; 
+    }
+      .program-body h3 { 
+        font-size: 14px; 
+    }
+      .journey-grid { 
+        gap: 8px; 
+    }
+      .step { 
+        gap: 7px; 
+    }
+      .step-icon { 
+        flex-basis: 52px; 
+        height: 52px; 
+    }
+      .step-arrow { 
+        right: -12px; 
+    }
+      footer { 
+        padding-left: 4%; 
+        padding-right: 4%; 
+        gap: 18px; 
+    }
+    }

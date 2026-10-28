@@ -1,0 +1,237 @@
+/* Mobile screens: 499px and below */
+    @media screen and (max-width: 499px) {
+      .navbar { 
+        flex-wrap: wrap; 
+        gap: 10px; 
+        padding: 10px 4%; }
+      .brand { 
+        min-width: auto; 
+    }
+      .brand-mark { 
+        width: 34px; 
+        height: 34px; 
+        font-size: 20px; 
+    }
+      .brand-name { 
+        font-size: 17px; 
+    }
+      .brand-name span { 
+        font-size: 15px; 
+    }
+      .nav-actions { 
+        margin-left: auto; 
+    }
+      .nav-actions .btn { 
+        padding: 8px 10px; 
+        font-size: 11px; 
+    }
+      .login-btn { 
+        display: none; 
+    }
+      .nav-links { 
+        order: 3; 
+        width: 100%; 
+        overflow-x: auto; 
+        gap: 18px; 
+    }
+      .nav-links a { 
+        font-size: 11px; 
+    }
+      .hero { 
+        min-height: 340px; 
+    }
+      .hero-image { 
+        width: 100%; 
+        opacity: .24; 
+    }
+      .hero-content { 
+        width: 100%; 
+        padding: 32px 5%; 
+    }
+      .hero h1 { 
+        font-size: 39px; 
+        letter-spacing: -1px; 
+    }
+      .hero p { 
+        font-size: 14px; 
+    }
+      .faq-grid { 
+        grid-template-columns: 1fr; 
+        gap: 0; 
+        padding: 0 4%; 
+        margin-top: 15px; 
+    }
+      .faq-category { 
+        margin-bottom: 13px; 
+    }
+      .category-title { 
+        font-size: 16px; 
+    }
+      .faq-question { 
+        font-size: 12px; 
+        padding: 11px; 
+    }
+      .answer-list { 
+        padding: 0 4%; 
+    }
+      .answer-card { 
+        padding-right: 10px; 
+    }
+      .cta { 
+        margin: 14px 4% 10px; 
+        padding: 20px; 
+        align-items: flex-start; 
+    }
+      .cta h2 { 
+        font-size: 21px; 
+    }
+      .cta p { 
+        max-width: 270px; 
+    }
+      .cta-image { 
+        right: -5%; 
+        width: 42%; 
+        opacity: .25; 
+    }
+      .cta-buttons { 
+        gap: 8px; 
+    }
+      .cta-buttons .btn { 
+        padding: 9px 11px; 
+    }
+      footer { 
+        padding: 22px 5% 12px; 
+    }
+      .footer-grid { 
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px 14px; 
+    }
+      .footer-column { 
+        border-right: 0; 
+        padding-right: 0; 
+    }
+      .footer-brand { 
+        grid-column: 1 / -1; 
+    }
+      .legal { 
+        flex-direction: column; 
+    }
+    }
+
+    /* Tablet screens: 500px to 758px */
+    @media screen and (min-width: 500px) and (max-width: 758px) {
+      .navbar { 
+        flex-wrap: wrap; 
+        gap: 12px; 
+        padding: 10px 3%; 
+    }
+      .brand { 
+        min-width: auto; 
+    }
+      .nav-actions { 
+        margin-left: auto;
+    }
+      .nav-links { 
+        order: 3; 
+        width: 100%; 
+        justify-content: space-between; 
+        gap: 12px; 
+    }
+      .nav-links a { 
+        font-size: 11px; 
+    }
+      .hero { 
+        min-height: 285px; 
+    }
+      .hero-content { 
+        width: 55%; 
+        padding: 25px 4%; 
+    }
+      .hero h1 { 
+        font-size: 39px; 
+    }
+      .hero-image { 
+        width: 54%; 
+        opacity: .85; 
+    }
+      .faq-grid { 
+        padding: 0 3%; 
+        gap: 14px; 
+    }
+      .category-title { 
+        font-size: 15px; 
+    }
+      .faq-question { 
+        padding: 9px; 
+        font-size: 11px; 
+    }
+      .answer-list { 
+        padding: 0 3%; 
+    }
+      .cta { 
+        margin-left: 3%; 
+        margin-right: 3%; 
+        padding-left: 5%; 
+    }
+      .cta-image { 
+        right: 4%; 
+        width: 28%; 
+        opacity: .55;
+    }
+      .footer-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+      .footer-column { 
+        border-right: 0; 
+    }
+      .footer-brand { 
+        grid-column: 1 / -1; 
+    }
+    }
+
+    /* Larger tablets and small laptop screens: 759px to 1200px */
+    @media (min-width: 759px) and (max-width: 1200px) {
+      .navbar { 
+        padding-left: 2%; 
+        padding-right: 2%; 
+        gap: 10px; 
+    }
+      .brand { 
+        min-width: 155px; 
+    }
+      .brand-name { 
+        font-size: 18px; 
+    }
+      .nav-links { 
+        gap: 13px; 
+    }
+      .nav-links a { 
+        font-size: 11px; 
+    }
+      .nav-actions { 
+        gap: 7px; 
+    }
+      .nav-actions .btn { 
+        padding: 8px 11px; 
+    }
+      .hero-content { 
+        padding-left: 5%; 
+    }
+      .faq-grid, .answer-list { 
+        padding-left: 3%; 
+        padding-right: 3%; 
+    }
+      .faq-grid { 
+        gap: 18px; 
+    }
+      .faq-question { 
+        font-size: 11px; 
+    }
+      .cta { 
+        margin-left: 3%; 
+        margin-right: 3%; 
+    }
+      .footer-grid { 
+        gap: 14px; 
+    }
+    }
