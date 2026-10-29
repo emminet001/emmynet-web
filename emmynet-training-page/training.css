@@ -11,8 +11,10 @@
       --white: #fff;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; 
+    }
+    html { scroll-behavior: smooth; 
+    }
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -21,9 +23,47 @@
       font-size: 13px;
       line-height: 1.5;
     }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; cursor: pointer; }
+    a { 
+        color: inherit; 
+        text-decoration: none; 
+    }
+    button { 
+        font: inherit; 
+        cursor: pointer; 
+    }
+      /* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  border-radius: 5px;
+  padding: 8px;
+  width: 42px;
+  height: 40px;
+  cursor: pointer;
+}
+.menu-toggle span {
+  display: block;
+  width: 23px;
+  height: 2px;
+  margin: 5px auto;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
 
+/* Turn hamburger into an X when open */
+.navbar.menu-open .menu-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar.menu-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar.menu-open .menu-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
     /* Top navigation */
     .navbar {
         width: 100%;
