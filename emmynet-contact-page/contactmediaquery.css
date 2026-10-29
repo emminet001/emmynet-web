@@ -9,50 +9,125 @@
     /* Mobile phones */
     @media screen and (max-width: 499px) {
       /* Hamburger lines */
+         .navbar {
+    position: relative;
+    z-index: 1000;
+  }
+    /* position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    z-index: 10; */
+  .brand {
+    width: aut;
+    min-width: 0;
+    justify-content:start !important;
+    flex: 1;
+  }
 
-      .navbar { 
-        flex-wrap: wrap; 
-        padding: 10px 4%; 
-        gap: 10px; 
-    }
-      .brand { 
-        min-width: auto;
-    }
-      .brand-mark { 
-        width: 35px; 
-        height: 35px; 
-        font-size: 21px; 
-    }
-      .brand-name { 
-        font-size: 17px; 
-    }
-      .brand-name span { 
-        font-size: 15px; 
-    }
-      .nav-actions { 
-        margin-left: auto; 
-        gap: 6px; 
-    }
-      .nav-actions .btn { 
-        padding: 8px 10px; 
-        font-size: 11px; 
-    }
-      .login-btn { 
-        display: none; 
-    }
-      .nav-links { 
-        order: 3; 
-        width: 100%; 
-        overflow-x: auto; 
-        gap: 19px; 
-    }
-      .nav-links a { 
-        font-size: 11px; 
-    }
+  .menu-toggle {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  /* Hide menu until hamburger is clicked */
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    background: var(--navy);
+    padding: 10px 4%;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+  }
+
+
+  /* Show dropdown when open */
+  .navbar.menu-open .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 18px 18px !important;
+    font-size: 20px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .nav-links a.active {
+    border-bottom: 2px solid var(--yellow);
+  }
+
+  /* Hide CTA until the dropdown opens */
+  .nav-cta {
+    display: none;
+    order: 4;
+    flex: 0 0 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar.menu-open .nav-cta {
+    display: flex;
+  }
+  /* Navigation */
+  .navbar {
+    padding: 12px 4%;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brand {
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    font-size: 19px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .brand-name span {
+    font-size: 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  .nav-cta {
+    width: 100%;
+  }
       .image { 
         min-height: 300px; 
     }
-      .hero-image { 
+      .header-image { 
         width: 100%; 
         opacity: .23; 
     }

@@ -12,69 +12,159 @@
       body { 
         font-size: 12px; 
     }
-      .navbar { 
-        padding: 10px 4%; 
-        flex-wrap: wrap; 
-        gap: 10px; 
-    }
-      .brand { 
-        min-width: auto; 
-    }
-      .brand-mark { 
-        width: 34px; 
-        height: 34px; 
-    }
-      .brand-name { 
-        font-size: 17px; 
-    }
-      .brand-name span { 
-        font-size: 15px; 
-    }
-      .nav-cta { 
-        min-width: auto; 
-        padding: 8px 11px; 
-    }
-      .nav-links { 
-        order: 3; 
-        width: 100%; 
-        overflow-x: auto; 
-        gap: 18px; }
-      .nav-links a { 
-        font-size: 11px; 
-    }
-      .hero { 
+      .navbar {
+    position: relative;
+    z-index: 1000;
+  }
+    /* position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    z-index: 10; */
+  .brand {
+    width: aut;
+    min-width: 0;
+    justify-content:start !important;
+    flex: 1;
+  }
+
+  .menu-toggle {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  /* Hide menu until hamburger is clicked */
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    background: var(--navy);
+    padding: 10px 4%;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+  }
+
+
+  /* Show dropdown when open */
+  .navbar.menu-open .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 18px 18px !important;
+    font-size: 20px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .nav-links a.active {
+    border-bottom: 2px solid var(--yellow);
+  }
+
+  /* Hide CTA until the dropdown opens */
+  .nav-cta {
+    display: none;
+    order: 4;
+    flex: 0 0 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar.menu-open .nav-cta {
+    display: flex;
+  }
+  /* Navigation */
+  .navbar {
+    padding: 12px 4%;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brand {
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    font-size: 19px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .brand-name span {
+    font-size: 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  .nav-cta {
+    width: 100%;
+  }
+      .header-container{ 
         min-height: auto; 
         align-items: flex-start; 
+        height: auto;
     }
-      .hero-image { 
+      .header-image { 
         width: 100%; 
-        opacity: .3; 
+        opacity: .6; 
         object-position: center; 
     }
-      .hero::before { 
-        background: linear-gradient(90deg, rgba(3,21,53,.98), rgba(3,21,53,.78)); 
+      .header-container::before { 
+        background: none
     }
-      .hero-content { 
+      .header-content { 
         padding: 30px 5%; 
         max-width: 100%; 
     }
-      .hero h1 { 
+      .header-container h1 { 
         font-size: 35px; 
     }
-      .hero p { 
+      .header-container p { 
         max-width: 100%; 
     }
-      .hero-buttons { 
+      .header-buttons {
+        width: 90%; 
         gap: 8px; 
+        display: flex;
+        flex-direction: column;
+        margin-left: 19px;
     }
-      .hero-buttons .btn { 
+      .header-buttons .btn { 
         flex: 1 1 45%; 
         padding: 8px; 
         gap: 7px; 
     }
-      .hero-stats { 
+      .header-stats { 
         gap: 9px; 
-        flex-wrap: wrap; 
+        /* flex-wrap: wrap;  */
         margin-top: 20px; 
     }
       .mini-stat { 
@@ -165,6 +255,7 @@
         border-right: 0; padding-right: 0; 
     }
       .legal { 
+        align-items: center;
         flex-direction: column; 
         gap: 4px; 
     }

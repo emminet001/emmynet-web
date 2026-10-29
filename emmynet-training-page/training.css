@@ -26,7 +26,9 @@
 
     /* Top navigation */
     .navbar {
+        width: 100%;
       min-height: 62px;
+      height: 80px;
       padding: 8px 2.4%;
       display: flex;
       align-items: center;
@@ -98,12 +100,14 @@
       transition: transform .2s;
     }
     .btn:hover { 
-        transform: translateY(-2px); 
+        background-color: var(--blue);
+        transform: translateY(-1px); 
+        border: 1px solid var(--blue);
     }
     .btn-yellow { 
         background: var(--yellow); 
         border-color: var(--yellow); 
-        color: #06122d; 
+        color: var(--white); 
     }
     .btn-blue { 
         background: var(--blue); 
@@ -119,8 +123,10 @@
     }
 
     /* Hero banner */
-    .hero {
+    .header-container {
+    width: 100%;
       min-height: 326px;
+      height: 500px;
       color: white;
       background: var(--navy);
       position: relative;
@@ -128,14 +134,14 @@
       display: flex;
       align-items: center;
     }
-    .hero::before {
+    .header-container::before {
       content: ""; 
       position: absolute; 
       inset: 0;
-      background: linear-gradient(90deg, #031535 0%, #031535 37%, rgba(3,21,53,.88) 45%, rgba(3,21,53,.05) 70%);
+      background: linear-gradient(90deg, #031535 0%, #031535 40%, rgba(3,21,53,.60) 50%, rgba(3,21,53,.05) 90%);
       z-index: 1;
     }
-    .hero-image {
+    .header-image {
       position: absolute; 
       right: 0; 
       top: 0; 
@@ -144,38 +150,41 @@
       object-fit: cover; 
       object-position: center;
     }
-    .hero-content { 
+    .image-content { 
         position: relative; 
         z-index: 2; 
-        padding: 30px 5.4%; 
+        padding: 20px 2.4%; 
         max-width: 470px; 
     }
-    .hero h1 { 
-        font-size: clamp(34px, 4.3vw, 45px); 
-        line-height: 1.08; 
+    .header-container h1 { 
+        font-size: clamp(34px, 4.3vw, 48px); 
+        line-height: 1.18; 
         margin: 0 0 9px; 
-        letter-spacing: -1.1px; 
+        letter-spacing: 1.0px; 
     }
-    .hero h1 span { 
+    .header-container h1 span { 
         color: var(--yellow); 
     }
-    .hero p { 
-        max-width: 350px; 
+    .header-container p { 
+        width: 100%; 
         margin: 0; 
-        font-size: 13px; 
+        font-size: 16px; 
         line-height: 1.45; 
     }
-    .hero-buttons { 
+    .header-buttons { 
         display: flex; 
         flex-wrap: wrap; 
         gap: 16px; 
-        margin-top: 15px; 
+        margin-top: 30px; 
     }
-    .hero-stats { 
+    .header-buttons a{
+        font-size: 14px;
+    }
+    .header-stats { 
         display: flex; 
         align-items: center; 
         gap: 13px; 
-        margin-top: 27px; 
+        margin-top: 30px; 
     }
     .mini-stat { 
         display: flex; 
@@ -192,20 +201,21 @@
     }
     .mini-stat strong { 
         display: block; 
-        font-size: 15px; 
+        font-size: 12px; 
         line-height: 1.1; 
     }
     .mini-stat small { 
         display: block; 
-        font-size: 9px; 
+        font-size: 10px; 
         white-space: nowrap;
     }
 
     /* Shared section headings */
     .section { 
-        max-width: 1120px; 
+        width: 90%; 
         margin: 0 auto; 
         padding: 13px 4.4% 0; 
+        margin-top: 20px;
     }
     .section-heading { 
         text-align: center; 
@@ -215,12 +225,12 @@
         margin: 0 0 1px; 
         color: var(--blue); 
         font-weight: 800; 
-        font-size: 11.5px; 
+        font-size: 16px; 
     }
     .section-heading h2 { 
         margin: 0; 
         color: var(--text); 
-        font-size: 22px; 
+        font-size: 24px; 
         line-height: 1.25; 
         letter-spacing: -.4px; 
     }
@@ -237,14 +247,16 @@
       gap: 11px; 
       padding: 13px 12px;
       min-height: 135px; 
-      border: 1px solid var(--border); 
+      height: 170px; 
       border-radius: 9px;
       background: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
     }
     .round-icon {
-      flex: 0 0 55px; 
-      width: 55px; 
-      height: 55px; 
+      flex: 0 0 50px; 
+      width: 50px; 
+      height: 50px; 
       border-radius: 50%;
       display: grid; 
       place-items: center; 
@@ -265,20 +277,23 @@
         background: #ff8200; 
     }
     .benefit-card h3 { 
-        margin: 1px 0 5px; 
-        font-size: 12.5px; 
+        margin: 1px 0 9px; 
+        font-size: 14px; 
         line-height: 1.35; 
+        font-weight: 600;
     }
     .benefit-card p { 
         margin: 0; 
-        font-size: 10.5px; 
+        font-size: 13px; 
         line-height: 1.45; 
-        color: #1c2941; 
+        color: #1c2941;
+        font-weight: 400; 
     }
 
     /* Training program cards */
     .programs { 
-        padding-top: 10px; 
+        padding-top: 10px;
+        margin-top: 20px; 
     }
     .program-grid { 
         display: grid; 
@@ -286,15 +301,19 @@
         gap: 13px; 
     }
     .program-card { 
-        border: 1px solid var(--border); 
         border-radius: 9px; 
         overflow: hidden; 
         background: white; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .program-card:nth-child(1) { border-color: #6a9bff; }
-    .program-card:nth-child(2) { border-color: #91d2b1; }
-    .program-card:nth-child(3) { border-color: #c9b3ef; }
-    .program-card:nth-child(4) { border-color: #ffb16e; }
+    .program-card:nth-child(1) { border-color: #6a9bff; 
+    }
+    .program-card:nth-child(2) { border-color: #91d2b1; 
+    }
+    .program-card:nth-child(3) { border-color: #c9b3ef; 
+    }
+    .program-card:nth-child(4) { border-color: #ffb16e; 
+    }
     .program-photo { 
         height: 95px; 
         position: relative; 
@@ -330,7 +349,8 @@
         color: #e86e00; 
     }
     .program-body p { 
-        font-size: 11px; 
+        font-size: 14px;
+        font-weight: 400; 
         line-height: 1.45; 
         margin: 0 0 9px; 
         min-height: 65px; 
@@ -338,7 +358,7 @@
     .details { 
         border-top: 1px solid #e7ebf2; 
         padding-top: 7px; 
-        font-size: 10px; 
+        font-size: 12px; 
         line-height: 1.7; 
         color: var(--blue); 
     }
@@ -350,24 +370,29 @@
         padding: 10px 3%; 
         font-size: 10.5px; 
         color: #17294a; 
+        margin-top: 20px;
     }
     .program-footnote span::before { 
         content: "♧"; color: var(--blue); 
-        font-size: 15px; 
+        font-size: 30px; 
         margin-right: 6px; 
+    }
+    .program-footnote{
+        font-size: 14px;
     }
 
     /* Four steps from enrolment to employment */
     .journey { 
+        width: 100%;
         border: 1px solid var(--border); 
         border-radius: 10px; 
-        padding: 9px 16px 16px; 
-        margin-top: 7px; 
+        padding: 9px 10px 10px; 
+        margin-top: 20px; 
     }
     .journey-grid { 
         display: grid; 
         grid-template-columns: repeat(4, 1fr); 
-        gap: 13px; 
+        gap: 40px; 
     }
     .step { 
         display: flex; 
@@ -378,25 +403,25 @@
     }
     .step-number { 
         position: absolute; 
-        top: -1px; 
+        top: 1px; 
         left: 0; 
         z-index: 2; 
-        width: 25px; 
-        height: 25px; 
+        width: 20px; 
+        height: 20px; 
         border-radius: 50%; 
         color: white; 
         display: grid; 
         place-items: center; 
         font-weight: 800; 
-        font-size: 14px; 
+        font-size: 10px; 
     }
     .step:nth-child(1) .step-number { background: var(--blue); }
     .step:nth-child(2) .step-number { background: #12864c; }
     .step:nth-child(3) .step-number { background: #7042b6; }
     .step:nth-child(4) .step-number { background: #f07816; }
     .step-icon { 
-        flex: 0 0 64px; 
-        height: 64px; 
+        flex: 0 0 50px; 
+        height: 50px; 
         border-radius: 50%; 
         display: grid; 
         place-items: center; 
@@ -417,19 +442,19 @@
         color: #f07816; 
     }
     .step h3 { 
-        font-size: 10.5px; 
+        font-size: 14px; 
         margin: 0 0 4px; 
     }
     .step p { 
-        font-size: 9.5px; 
+        font-size: 12px; 
         line-height: 1.4; 
         margin: 0; 
     }
     .step-arrow { 
         color: #8a9aba; 
-        font-size: 22px; 
+        font-size: 26px; 
         position: absolute; 
-        right: -16px; 
+        right: -28px; 
         top: 12px; 
     }
 
@@ -468,16 +493,16 @@
     }
     .testimonial p {
         margin: 0 0 7px; 
-        font-size: 10.5px; 
+        font-size: 13px; 
         line-height: 1.45; 
     }
     .testimonial strong { 
-        font-size: 10.5px; 
+        font-size: 12px; 
         display: block; 
     }
     .testimonial small { 
         color: var(--blue); 
-        font-size: 9.5px; 
+        font-size: 12px; 
     }
     .dots { 
         text-align: center; 
@@ -520,11 +545,11 @@
     }
     .apply-cta h2 { 
         margin: 0 0 4px; 
-        font-size: 21px; 
+        font-size: 25px; 
     }
     .apply-cta p { 
         margin: 0; 
-        font-size: 13px; 
+        font-size: 14px; 
         line-height: 1.45; 
     }
     .apply-buttons { 
@@ -536,7 +561,7 @@
     /* Footer */
     footer { 
         background: var(--navy); 
-        color: white; 
+        color: var(--white); 
         padding: 15px 5.5% 10px; 
         display: grid; 
         grid-template-columns: 1.3fr 1fr 1.25fr 1.3fr; 
@@ -551,22 +576,22 @@
         margin-bottom: 7px; 
     }
     .footer-brand .brand-mark { 
-        width: 32px; 
-        height: 32px; 
-        font-size: 18px; 
+        width: 40px; 
+        height: 40px; 
+        font-size: 22px; 
     }
     .footer-brand .brand-name { 
-        font-size: 17px; 
+        font-size: 20px; 
     }
     .footer-brand .brand-name span { 
-        font-size: 15px; 
+        font-size: 18px; 
     }
     footer h3 { 
         margin: 0 0 5px; 
-        font-size: 12px; 
+        font-size: 16px; 
     }
     footer p, footer a { 
-        font-size: 10px; 
+        font-size: 13px; 
         line-height: 1.65; 
     }
     footer p { 
@@ -580,9 +605,10 @@
     }
     .footer-links a:hover, .footer-programs a:hover { 
         color: var(--yellow); 
+        transform: translateX(-2px);
     }
     .footer-contact p { 
-        font-size: 11px; 
+        font-size: 13px; 
     }
     .social-row { 
         display: flex; 
@@ -592,11 +618,14 @@
     .social-row a { 
         display: grid; 
         place-items: center; 
-        width: 21px; 
-        height: 21px; 
+        width: 26px; 
+        height: 26px; 
         border-radius: 50%; 
         background: #1761bc; 
         font-weight: bold; 
+    }
+    .social-row a:hover{
+        transform: translateY(-1px);
     }
     .legal { 
         grid-column: 1 / -1; 
@@ -604,5 +633,8 @@
         padding-top: 5px; 
         display: flex; 
         justify-content: space-between; 
-        font-size: 9px; 
+        font-size: 13px; 
+    }
+    .policy a:hover{
+        color: var(--yellow);
     }

@@ -38,7 +38,39 @@
     button, a { 
         -webkit-tap-highlight-color: transparent; 
     }
+    /* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  border-radius: 5px;
+  padding: 8px;
+  width: 42px;
+  height: 40px;
+  cursor: pointer;
+}
+.menu-toggle span {
+  display: block;
+  width: 23px;
+  height: 2px;
+  margin: 5px auto;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
 
+/* Turn hamburger into an X when open */
+.navbar.menu-open .menu-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar.menu-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar.menu-open .menu-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
     /* Header and navigation */
     .navbar {
       min-height: 71px;
@@ -83,8 +115,7 @@
     }
     .nav-links a { 
         padding: 8px 0; 
-        font-weight: 700; 
-        font-size: 18px; 
+        font-size: 16px; 
         white-space: nowrap; 
     }
     .nav-links a.active { 
@@ -92,11 +123,6 @@
     }
     .nav-links a:hover { 
         color: var(--yellow); }
-    .nav-actions { 
-        display: flex; 
-        gap: 12px; 
-        align-items: center; 
-    }
     .btn {
       display: inline-flex; 
       align-items: center; 
@@ -114,14 +140,19 @@
       transition: transform .2s, opacity .2s;
     }
     .btn:hover { 
-        transform: translateY(-2px); 
-        background-color: #0755df;
+        transform: translateY(-1px); 
+        background-color: #6482b6;
         color: var(--white);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .btn-yellow { 
+    .btn-yellow-head { 
         background: var(--yellow); 
-        color: #06122d; 
-        border-color: var(--blue); 
+        color: var(--white); 
+        border-color: var(--yellow); 
+        padding: 10px !important;
+    }
+    .btn-yellow-head:hover{
+        border: 1px solid var(--blue) !important;
     }
     .btn-blue { 
         background: var(--blue); 

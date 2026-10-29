@@ -16,27 +16,41 @@
       <span class="brand-name">Emmynet<span>ICT Hub</span></span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="index.html">Home</a>
+     <a class="active" href="../index.html">Home</a>
       <a href="../emmynet-about-page/about.html">About</a>
-      <a href="../service-page/service.html">Services⌄</a>
-      <a class="active" href="../emmynet-training-page/index.html">Training</a>
-      <a href="../emmynet-contact-page/contact.html">Contact</a>
+      <a href="../service-page/service.html">Services</a>
+      <a  href="../emmynet-contact-page/contact.html">Contact</a>
+      <a href="../emmynet-training-page/training.html">Training</a>
+      <a href="../emmynet-faq-page/index.html">FAQ</a>
+      <a class="btn btn-yellow nav-cta" href="#apply">Get Started</a>
     </nav>
-    <a class="btn btn-yellow nav-cta" href="#apply">Get Started</a>
+    <!-- Mobile hamburger button -->
+    <button 
+    class="menu-toggle"
+    id="menuToggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="navLinks"
+    type="button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   </header>
 
   <main>
-    <!-- Hero banner -->
-    <section class="hero" id="home">
-      <img class="hero-image" src="assets/hero-training.jpg" alt="Learners practicing technology skills in a training room">
-      <div class="hero-content">
+    <!--image container -->
+    <section class="header-container" id="home">
+      <img class="header-image" src="assets/training.jpg" alt="Learners practicing technology skills in a training room">
+      <div class="image-content">
         <h1>Learn the Skills.<br><span>Build the Career.</span></h1>
-        <p>Practical, hands-on tech training designed to take you from beginner to job-ready — taught by people who build real products for real clients.</p>
-        <div class="hero-buttons">
-          <a class="btn btn-yellow" href="#programs">View Programs <span>→</span></a>
-          <a class="btn btn-white-outline" href="#contact">Talk to an Advisor <span>→</span></a>
+        <p>Practical, hands-on tech training designed to take you from beginner to job-ready taught by people who build real products for real clients.</p>
+        <div class="header-buttons">
+          <a class="btn btn-yellow" href="#">View Programs <span>→</span></a>
+          <a class="btn btn-white-outline" href="#">Talk to an Advisor <span>→</span>
+          </a>
         </div>
-        <div class="hero-stats">
+        <div class="header-stats">
           <div class="mini-stat">
             <span class="symbol">♟</span>
             <span><strong>1,000+</strong><small>Learners Trained</small></span>
@@ -68,7 +82,7 @@
           <div class="round-icon blue">⌨</div>
           <div>
             <h3>Real Projects,<br>Not Just Theory</h3>
-            <p>Our curriculum is shaped by actual client work — you’ll learn the tools and workflows companies use today, not outdated textbook methods.</p>
+            <p>Our curriculum is shaped by actual client work you'll learn the tools and workflows companies use today, not outdated textbook methods.</p>
           </div>
         </article>
         <article class="benefit-card">
@@ -81,7 +95,7 @@
           <div class="round-icon purple">◎</div>
           <div>
             <h3>Career-Focused</h3>
-            <p>We build your skills and your portfolio, so you leave with proof of what you can do — not just a certificate.</p>
+            <p>We build your skills and your portfolio, so you leave with proof of what you can do not just a certificate.</p>
           </div>
         </article>
         <article class="benefit-card">
@@ -105,7 +119,7 @@
             <img src="assets/web-development.jpg" alt="Laptop showing website code"><div class="round-icon blue">⌨</div>
         </div>
           <div class="program-body">
-            <h3>Web Development<br>Bootcamp</h3>
+            <h3>Web Development</h3>
             <p>Go from zero to job-ready developer. Covers front-end, back-end, and real project deployment.</p>
             <div class="details"><strong>Duration:</strong> 12 Weeks<br>
               <strong>Format:</strong> Hybrid (Online + In-person)
@@ -151,7 +165,8 @@
         </article>
       </div>
       <div class="program-footnote">
-        <span>Small Class Sizes</span><span>Mentorship &amp; Guidance</span>
+        <span>Small Class Sizes</span>
+        <span>Mentorship &amp; Guidance</span>
         <span>Practical Projects</span>
         <span>Certificate of Completion</span>
         <span>Job Placement Support</span>
@@ -228,7 +243,8 @@
       </div>
       <!-- These dots are interactive and can select testimonial pairs -->
       <div class="dots" aria-label="Testimonial pages">
-        <button class="active" aria-label="Show testimonial set 1" data-set="0"></button>
+        <button class="active" aria-label="Show testimonial set 1" data-set="0">
+        </button>
         <button aria-label="Show testimonial set 2" data-set="1"></button>
         <button aria-label="Show testimonial set 3" data-set="2"></button>
         <button aria-label="Show testimonial set 4" data-set="3"></button>
@@ -282,7 +298,7 @@
     </div>
     <div class="footer-programs" id="training">
       <h3>Training Programs</h3>
-      <a href="#programs">Web Development Bootcamp</a>
+      <a href="#programs">Web Development</a>
       <a href="#programs">IT &amp; Data Fundamentals</a>
       <a href="#programs">Career Upskilling Track</a>
       <a href="#programs">Corporate Team Training</a>
@@ -290,13 +306,14 @@
     </div>
     <div class="footer-contact">
       <h3>Get in Touch</h3>
-      <p>☎ &nbsp; +234 801 234 5678</p>
-      <p>✉ &nbsp; info@emmynetict.com</p>
-      <p>♦ &nbsp; Lagos, Nigeria</p>
+      <p>☎ &nbsp; +234 8165960618</p>
+      <p>✉ &nbsp; emmyneticthub@gmail.com</p>
+      <p>♦ &nbsp; Benue, Nigeria</p>
     </div>
     <div class="legal">
       <span>© 2024 Emmynet ICT Hub. All Rights Reserved.</span>
-      <span><a href="#contact">Privacy Policy</a> &nbsp; | &nbsp; 
+      <span class="policy">
+        <a href="#contact">Privacy Policy</a> &nbsp; | &nbsp; 
         <a href="#contact">Terms &amp; Conditions</a>
       </span>
     </div>
